@@ -32,3 +32,37 @@ a:hover {
 ul, ol {
     margin-left: 20px;
 }
+section {
+    position: relative;
+    color: white;
+    padding: 50px;
+    min-height: 300px;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* transparency */
+    z-index: 0;
+}
+
+section > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Assign different images per section - no folder path */
+.bg-challenges::before { background-image: url('challenges.jpg'); }
+.bg-who::before { background-image: url('who-we-are.jpg'); }
+.bg-solution::before { background-image: url('solution.jpg'); }
+.bg-how::before { background-image: url('how-it-works.jpg'); }
+.bg-benefits::before { background-image: url('benefits.jpg'); }
+.bg-experience::before { background-image: url('experience.jpg'); }
+.bg-idea::before { background-image: url('idea.jpg'); }
+.bg-blueprints::before { background-image: url('blueprints.jpg'); }
+.bg-models::before { background-image: url('models.jpg'); }
+.bg-education::before { background-image: url('education.jpg'); }
+.bg-future::before { background-image: url('future.jpg'); }

@@ -35,6 +35,7 @@ ul, ol {
 section {
     position: relative;
     padding: 50px;
+    color:'black';
     min-height: 300px;
 }
 

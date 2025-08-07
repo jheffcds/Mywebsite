@@ -5,6 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business Proposal - VR Verity</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        section {
+            position: relative;
+            color: white;
+            padding: 50px;
+            min-height: 300px;
+        }
+
+        section::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.5; /* transparency */
+            z-index: 0;
+        }
+
+        section > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Assign different images per section - no folder path */
+        .bg-challenges::before { background-image: url('challenges.jpg'); }
+        .bg-who::before { background-image: url('who-we-are.jpg'); }
+        .bg-solution::before { background-image: url('solution.jpg'); }
+        .bg-how::before { background-image: url('how-it-works.jpg'); }
+        .bg-benefits::before { background-image: url('benefits.jpg'); }
+        .bg-experience::before { background-image: url('experience.jpg'); }
+        .bg-idea::before { background-image: url('idea.jpg'); }
+        .bg-blueprints::before { background-image: url('blueprints.jpg'); }
+        .bg-models::before { background-image: url('models.jpg'); }
+        .bg-education::before { background-image: url('education.jpg'); }
+        .bg-future::before { background-image: url('future.jpg'); }
+    </style>
 </head>
 <body>
     <header>
@@ -15,7 +51,7 @@
         <p>A New Standard in Property Presentation</p>
     </header>
 
-    <section>
+    <section class="bg-challenges">
         <h2>Challenges Faced by Real Estate Agencies Today:</h2>
         <ul>
             <li>Increasing competition in both local and international markets</li>
@@ -26,12 +62,12 @@
         </ul>
     </section>
 
-    <section>
+    <section class="bg-who">
         <h2>Who We Are</h2>
         <p>We specialize in creating cutting-edge immersive experiences tailored for the real estate sector. Our goal is to help immo agencies attract more clients, close deals faster, and stay ahead of the market using innovative visual technologies.</p>
     </section>
 
-    <section>
+    <section class="bg-solution">
         <h2>Our Solution: Immersive Property Technology</h2>
         <ul>
             <li>360° Virtual Tours</li>
@@ -43,7 +79,7 @@
         </ul>
     </section>
 
-    <section>
+    <section class="bg-how">
         <h2>How It Works</h2>
         <ol>
             <li>Scan & Capture – Digitize the property using high-end 3D/360° technology.</li>
@@ -53,7 +89,7 @@
         </ol>
     </section>
 
-    <section>
+    <section class="bg-benefits">
         <h2>Benefits for Your Agency</h2>
         <ul>
             <li>Attract Remote Buyers</li>
@@ -64,17 +100,17 @@
         </ul>
     </section>
 
-    <section>
+    <section class="bg-experience">
         <h2>Select, Experience, Customize and Make it Real!</h2>
         <p>An innovative way to envision your business.</p>
     </section>
 
-    <section>
+    <section class="bg-idea">
         <h2>From Idea to Innovation</h2>
         <p>Virtual Reality began in the 1960s and evolved in the 1990s. It gained mainstream attention in the 2010s with better immersive tech.</p>
     </section>
 
-    <section>
+    <section class="bg-blueprints">
         <h2>From Blueprints to 3D Digital Model</h2>
         <ul>
             <li>Head-Mounted Displays create depth</li>
@@ -84,7 +120,7 @@
         </ul>
     </section>
 
-    <section>
+    <section class="bg-models">
         <h2>3D Models to Explore and Navigate</h2>
         <p>Tutorial videos will be provided to guide on using VR headsets in your business.</p>
         <ul>
@@ -94,7 +130,7 @@
         </ul>
     </section>
 
-    <section>
+    <section class="bg-education">
         <h2>Immersive Education</h2>
         <ul>
             <li>Learning Without Limits</li>
@@ -103,7 +139,7 @@
         </ul>
     </section>
 
-    <section>
+    <section class="bg-future">
         <h2>The Future of VR</h2>
         <ul>
             <li>Smarter Devices – Smaller, lighter, more affordable headsets</li>
